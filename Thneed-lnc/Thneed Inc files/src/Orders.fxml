@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" prefHeight="400.0" prefWidth="581.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.OrdersController">
+
+  <children>
+      <Button fx:id="saveButton" layoutX="490.0" layoutY="321.0" mnemonicParsing="false" onAction="#saveDataCalled" text="Save" />
+      <Button fx:id="updateButton" layoutX="253.0" layoutY="200.0" mnemonicParsing="false" onAction="#updateButtonClicked" text="Update --&gt;" />
+      <Button fx:id="newOrderButton" layoutX="322.0" layoutY="321.0" mnemonicParsing="false" onAction="#newOrderButtonClicked" text="New Order" />
+      <ListView fx:id="filled" layoutX="46.0" layoutY="151.0" prefHeight="152.0" prefWidth="200.0" />
+      <ListView fx:id="unfilled" layoutX="338.0" layoutY="151.0" prefHeight="152.0" prefWidth="200.0" />
+      <Label layoutX="79.0" layoutY="81.0" text="Unfilled Orders">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="382.0" layoutY="81.0" text="Filled Orders">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="237.0" layoutY="14.0" text="Thneed Inc" textFill="#3f0fea">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="122.0" prefHeight="17.0" prefWidth="271.0" />
+      <Label layoutX="48.0" layoutY="131.0" text="OrderID Thneed CustomerID PlacedDate">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="340.0" layoutY="131.0" text="OrderID Thneed CustomerID FilledDate">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Button fx:id="customerInfo" layoutX="175.0" layoutY="321.0" mnemonicParsing="false" onAction="#customerInfoClicked" text="Customer Info" />     
+      <Button fx:id="inventory" layoutX="46.0" layoutY="321.0" mnemonicParsing="false" onAction="#inventoryClicked" text="Inventory" />       
+   
+   </children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="200.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="153.0" layoutY="14.0" text="REPORT" textFill="#1d28f5">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="100.0" layoutY="59.0" text="Order Fill Rate:" />
+      <Label layoutX="76.0" layoutY="80.0" text="Most Popular Item:" />
+      <Label layoutX="73.0" layoutY="103.0" text="Least Popular Item:" />
+      <Label layoutX="87.0" layoutY="123.0" text="Backorder Items:" />
+      <Label fx:id="fillRate" layoutX="201.0" layoutY="59.0" text="Label" />
+      <Label fx:id="backorder" layoutX="201.0" layoutY="123.0" text="Label" />
+      <Label fx:id="leastPop" layoutX="201.0" layoutY="102.0" text="Label" />
+      <Label fx:id="mostPop" layoutX="201.0" layoutY="80.0" text="Label" />
+   </children>
+</AnchorPane>

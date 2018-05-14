@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="480.0" prefWidth="530.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.InventoryOrderController">
+   <children>
+      <Line endX="270.0" layoutX="179.0" layoutY="76.0" startX="-100.0" />
+      <Line endX="270.0" layoutX="179.0" layoutY="112.0" startX="-100.0" />
+      <Line endX="60.0" layoutX="99.0" layoutY="156.0" rotate="90.0" startX="-100.0" />
+      <Line endX="60.0" layoutX="469.0" layoutY="156.0" rotate="90.0" startX="-100.0" />
+      <Line endX="60.0" layoutX="158.0" layoutY="157.0" rotate="90.0" startX="-100.0" />
+      <Line endX="270.0" layoutX="179.0" layoutY="143.0" startX="-100.0" />
+      <Line endX="270.0" layoutX="179.0" layoutY="172.0" startX="-100.0" />
+      <Line endX="270.0" layoutX="179.0" layoutY="203.0" startX="-100.0" />
+      <Line endX="270.0" layoutX="179.0" layoutY="237.0" startX="-100.0" />
+      <Line endX="60.0" layoutX="391.0" layoutY="157.0" rotate="90.0" startX="-100.0" />
+      <Line endX="60.0" layoutX="312.0" layoutY="156.0" rotate="90.0" startX="-100.0" />
+      <Line endX="60.0" layoutX="234.0" layoutY="156.0" rotate="90.0" startX="-100.0" />
+      <Label layoutX="104.0" layoutY="120.0" text="S" />
+      <Label layoutX="103.0" layoutY="149.0" text="M" />
+      <Label layoutX="105.0" layoutY="179.0" text="L" />
+      <Label layoutX="101.0" layoutY="211.0" text="XL" />
+      <Label layoutX="158.0" layoutY="86.0" text="Green" />
+      <Label layoutX="241.0" layoutY="86.0" text="Blue" />
+      <Label layoutX="321.0" layoutY="87.0" text="Red" />
+      <Label layoutX="391.0" layoutY="87.0" text="Yellow" />
+      <Label fx:id="GS" layoutX="167.0" layoutY="120.0" text="GS" />
+      <Label fx:id="GM" layoutX="166.0" layoutY="149.0" text="GM" />
+      <Label fx:id="GL" layoutX="169.0" layoutY="179.0" text="GL" />
+      <Label fx:id="GX" layoutX="168.0" layoutY="211.0" text="GX" />
+      <Label fx:id="BS" layoutX="245.0" layoutY="120.0" text="BS" />
+      <Label fx:id="BM" layoutX="244.0" layoutY="149.0" text="BM" />
+      <Label fx:id="BL" layoutX="247.0" layoutY="179.0" text="BL" />
+      <Label fx:id="BX" layoutX="246.0" layoutY="211.0" text="BX" />
+      <Label fx:id="RS" layoutX="324.0" layoutY="120.0" text="RS" />
+      <Label fx:id="RM" layoutX="323.0" layoutY="149.0" text="RM" />
+      <Label fx:id="RL" layoutX="326.0" layoutY="179.0" text="RL" />
+      <Label fx:id="RX" layoutX="325.0" layoutY="211.0" text="RX" />
+      <Label fx:id="YS" layoutX="402.0" layoutY="120.0" text="YS" />
+      <Label fx:id="YM" layoutX="401.0" layoutY="149.0" text="YM" />
+      <Label fx:id="YL" layoutX="404.0" layoutY="179.0" text="YL" />
+      <Label fx:id="YX" layoutX="403.0" layoutY="211.0" text="YX" />
+      <Button fx:id="reportButton" layoutX="222.0" layoutY="257.0" mnemonicParsing="false" onAction="#reportButtonClicked" text="View Report" />
+      <Label layoutX="151.0" layoutY="28.0" text="INVENTORY REVIEW" textFill="#3f0fea">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="217.0" layoutY="321.0" text="RESTOCK" textFill="#3f0fea">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="colorCombo" layoutX="168.0" layoutY="387.0" prefHeight="27.0" prefWidth="132.0" />
+      <ComboBox fx:id="sizeCombo" layoutX="321.0" layoutY="387.0" prefHeight="27.0" prefWidth="68.0" />
+      <Button fx:id="restockButton" layoutX="404.0" layoutY="387.0" mnemonicParsing="false" onAction="#reStockButtonClicked" text="Restock" />
+      <Label layoutX="76.0" layoutY="362.0" text="Quantity:" />
+      <Label layoutX="223.0" layoutY="362.0" text="Color:" />
+      <Label layoutX="340.0" layoutY="362.0" text="Size:" />
+      <Button fx:id="doneButton" layoutX="247.0" layoutY="431.0" mnemonicParsing="false" onAction="#doneButtonClicked" text="Done" />
+      <TextField fx:id="quant" layoutX="68.0" layoutY="387.0" prefHeight="27.0" prefWidth="75.0" />
+   </children>
+</AnchorPane>
